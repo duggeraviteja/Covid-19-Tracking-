@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar-brand{
+font-size:2rem !important;
+}
+
+.nav-active{
+    font-weight: bold;
+    font-size: large;
+    width:fit-content;
+    border-bottom: 2px double #eb2f06;
+}
+
+
+.animated{
+    animation: up-down 6s ease-in-out 1s infinite alternate both;
+   
+    }
+      @-webkit-keyframes up-down {
+        0%{
+            transform: rotate(0deg);
+        }
+        25% {
+            transform: rotate(180deg);
+        }
+        50%{
+            transform: rotate(270deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+     } 
+     @keyframes up-down {
+        0%{
+            transform: rotate(0deg);
+        }
+
+     25% {
+            transform: rotate(180deg);
+        }
+        50%{
+            transform: rotate(270deg);
+        } 
+        100% {
+            transform: rotate(360deg);
+        } 
+    }
+
+
+.covid-title {
+    font-family : cursive;
+    font-style:oblique;
+    color: red;
+}
+.navbar{
+    background: linear-gradient(35deg, #55efc4  30%, rgba(0,0,0,0) 45%), linear-gradient(135deg, #a29bfe 30%, #75eeee 85%);
+    /* background: linear-gradient(145deg, #2bcbba 33%, #26de81 33%, #45aaf2 33% ); */
+    width: 100%;
+}
+
+.main{
+    font-family: cursive;
+    font-style: italic;
+    text-align: center;
+    margin: auto;
+}
+/* data cards */
+
+
+
+
+.card {
+    background: linear-gradient(30deg, #ffa500  30%, rgba(0,0,0,0) 45%), linear-gradient(135deg, #fff 65%, #2fda84 75%);
+    color: blue;
+ 
+
+}
+
+.card-2 {
+    background: linear-gradient(to right, #373b44, #4286f4) !important;
+    color: #fff;
+   
+}
+
+.card-4 {
+    background: linear-gradient(to right, #0a504a, #38ef7d) !important;
+    color: #fff;
+}
+
+/* .card-3 {
+    background: linear-gradient(to right, #a86008, #ffba56) !important;
+    color: #fff;
+} */
+
+
+.card-5 {
+    background: linear-gradient(135deg, #f52839, #ae27c6) !important;
+    color: #fff;
+}
+
+.card-3 {
+    background: linear-gradient(135deg, #61ddd9 0%, #2fda84 100%) !important;
+    color: #fff;
+}
+
+.card-6 {
+    background: linear-gradient(to right, #e6a85e, #7d56ff) !important;
+    color: #fff;
+}
+
+
+.live{
+    color:red;
+}
+
+.graph-page{
+    background: #c2d0cd;
+  
+}
+
+.cnt{
+    text-align: center;
+}
+
+
+
+
+.ca:hover {
+    transition: all 0.2s ease-out;
+    box-shadow: 0px 4px 8px rgba(228, 57, 57, 0.653);
+    top: -4px;
+    border: 2px solid #a55eea;
+    background-color:#09af00;
+  }
+
+  .ca {
+      box-shadow: 4px 8px 4px 4px #9ee7d6;
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+    border:2px solid rgb(121, 206, 208) !important;
+  }
+  
+
+.state-bgm:hover{
+    background-color:#9AECDB !important; background: linear-gradient(30deg, #eec477  30%, rgba(0,0,0,0) 45%), linear-gradient(135deg, #fff 65%, #53dc97 75%);
+    color:black;
+}
+
+.active-bgm:hover{
+    background: linear-gradient(to right, #373b44, #4286f4) !important;
+    color: #fff;}
+
+.recovered-bgm:hover{
+    background: linear-gradient(to right, #0a504a, #38ef7d) !important;
+    color: #fff;}
+
+.lastupdate-bgm:hover{
+
+    background: linear-gradient(to right, #e6a85e, #7d56ff) !important;
+    color: #fff;
+}
+
+.deaths-bgm:hover{
+  background: linear-gradient(135deg, #f52839, #ae27c6) !important;
+    color: #fff;}
+.confirmed-bgm:hover{
+    background: linear-gradient(135deg, #61ddd9 0%, #2fda84 100%) !important;
+    color: #fff;
+}
+.heading {
+   background: linear-gradient(30deg, #e9d7a4  30%, rgba(0,0,0,0) 45%), linear-gradient(135deg, rgb(166, 111, 208) 65%, #69dac9 75%);
+    color:#fff;
+    font-size: 1.3rem;
+}
+
+.state-wise{
+    text-decoration: none;
+    background: linear-gradient(135deg, #84d19a 0%, #55cfd1 100%) !important;
+    font-size: 1.3rem !important;
+    color: #fff;
+}
+.head{
+    text-decoration:underline;
+}
