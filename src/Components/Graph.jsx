@@ -10,19 +10,16 @@ const Graph = ()=>{
 
 
 
+ function handle(event) {
+      let val = parseInt(event.target.value);
 
-    function handle(event) {
-      const val = event.target.value;
-
-      if(val>39){
+      if(val >= 37){
         alert("Enter valid Number");
+        return;
+      } else {
+        setVal(val);
       }
 
-        setVal(val);
-  
-    
-      
-    }
 
     function validate(event) {
     
@@ -33,7 +30,7 @@ const Graph = ()=>{
 
 
     const getCoviddata = async () =>{
-      const response = await fetch('https://api.covid19india.org/data.json');
+      const response = await fetch('https://data.covid19india.org/data.json');
       const actualData = await response.json();
       //console.log(data);
      // console.log(actualData.statewise[0]);
