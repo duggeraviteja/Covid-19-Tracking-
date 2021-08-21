@@ -1,4 +1,4 @@
-import React,  {useEffect, useState}from "react";
+import React,  { useState}from "react";
 import {Bar } from "react-chartjs-2";
 import { NavLink } from "react-router-dom";
 
@@ -18,13 +18,15 @@ const Graph = ()=>{
       } else {
         setVal(val);
       }
-      
     }
+    window.onload = function() {
+      getCoviddata();
+    };
+
+
 
     function validate(event) {
-    
-      setVal(val);
-  getCoviddata();
+      getCoviddata();
 
     }
     const getCoviddata = async () =>{
@@ -34,12 +36,9 @@ const Graph = ()=>{
      // console.log(actualData.statewise[0]);
 
       setdata(actualData.statewise[val]);
-  
+
     }
-    useEffect(() => {
-      getCoviddata();
-    
-    }, []);
+   
 
 const data = {
     type :'bar',
