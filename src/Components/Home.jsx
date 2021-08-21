@@ -6,7 +6,7 @@ const Home=  () => {
 const [data,setdata] = useState([]);
 
   const getCoviddata = async () =>{
-    const response = await fetch('https://api.covid19india.org/data.json');
+    const response = await fetch('https://data.covid19india.org/data.json');
     const actualData = await response.json();
     //console.log(data);
 
@@ -110,8 +110,8 @@ const [data,setdata] = useState([]);
 
 </div>
 </div>
-<div>
-  <NavLink to="/statewisedata"  className="state-wise btn ">  Track covid-19 cases statewise </NavLink>
+<div className="text-center">
+  <NavLink to="/statewisedata"  className="state-wise btn m-2 ">  Track covid-19 cases statewise </NavLink>
 </div>
 
 
