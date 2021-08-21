@@ -9,8 +9,7 @@ const Graph = ()=>{
     const [val,setVal] =useState(0);
 
 
-
- function handle(event) {
+    function handle(event) {
       let val = parseInt(event.target.value);
 
       if(val >= 37){
@@ -19,7 +18,8 @@ const Graph = ()=>{
       } else {
         setVal(val);
       }
-
+      
+    }
 
     function validate(event) {
     
@@ -27,8 +27,6 @@ const Graph = ()=>{
   getCoviddata();
 
     }
-
-
     const getCoviddata = async () =>{
       const response = await fetch('https://data.covid19india.org/data.json');
       const actualData = await response.json();
@@ -80,7 +78,7 @@ const data = {
 <h2>Graph Showing Data of Covid-19 Cases In India</h2>
 
 <input type="number" id="fname"  className="p-2 m-2" onChange={handle} name="name" placeholder="Enter State Number" autoFocus/>
-<input type="submit" className="btn btn-success m-2" onClick={validate} value="Submit"/>
+<input type="submit" className="btn btn-info m-2" onClick={validate} value="Submit"/>
 
 </div>
         <div className="conatainer-flex col-md-6 col-12 mx-auto mt-4 m-2 graph-page">
